@@ -29,9 +29,6 @@ dependencies:
   react-toastify:
     specifier: ^9.1.1
     version: 9.1.1(react-dom@18.2.0)(react@18.2.0)
-  vanilla-tilt:
-    specifier: ^1.8.0
-    version: 1.8.0
 
 devDependencies:
   '@types/react':
@@ -3272,10 +3269,6 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
-
-  /vanilla-tilt@1.8.0:
-    resolution: {integrity: sha512-wVCHyyfRuiRdKhDTNxKPb60lkagmywDSqLgFETEr71Sm646AvGxuf/14Kx9A8FaISyYvMoKQHk6FTqt+YLGhEw==}
-    dev: false
 
   /vite-plugin-pwa@0.16.4(vite@4.0.4)(workbox-build@7.0.0)(workbox-window@7.0.0):
     resolution: {integrity: sha512-lmwHFIs9zI2H9bXJld/zVTbCqCQHZ9WrpyDMqosICDV0FVnCJwniX1NMDB79HGTIZzOQkY4gSZaVTJTw6maz/Q==}
