@@ -7,12 +7,9 @@ import Routinebox from './RoutineBox/Routinebox';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AiFillSetting } from "react-icons/ai";
-import { FaDiscord, FaFacebookMessenger, FaFilePdf, FaGithub, FaLink, FaShareAlt, FaTelegramPlane, FaTimes } from "react-icons/fa"
-import pdfLink from "../../assets/pdf/routine.pdf";
+import { FaDiscord, FaFacebookMessenger, FaGithub, FaLink, FaShareAlt, FaTelegramPlane, FaTimes } from "react-icons/fa";
 import "animate.css"
 import Weekend from '../Weekend/Weekend'
-import { Link } from 'react-router-dom';
-import { BiMessageRounded } from 'react-icons/bi'
 import ReactGA from 'react-ga4';
 
 export default function Routine() {
@@ -36,8 +33,7 @@ export default function Routine() {
     if (today === "Friday" || today === "Saturday") {
       // alert("No class today :: Enjoy your day!");
       setCheke(false);
-      console.log("No class today :: Enjoy your day!");
-      document.title = `Routine | ${today}`
+      document.title = `${today}`
       ReactGA.event({
         category: 'Page Visit',
         action: `${today}`,
@@ -46,7 +42,7 @@ export default function Routine() {
 
     } else {
       setCheke(true);
-      document.title = `Routine | ${today}`
+      document.title = `${today}`
       
       ReactGA.event({
         category: 'Page Visit',
@@ -57,7 +53,7 @@ export default function Routine() {
 
     }
     setRoutine(routineData[today.toLowerCase()])
-    // console.log(today)
+
 
   }, [today, routine, date]);
 
@@ -113,13 +109,6 @@ export default function Routine() {
   };
 
 
-  const handleCrClick = () => {
-    ReactGA.event({
-      category: 'Navigation',
-      action: 'CR Click from Nav',
-      label: 'Contact CR Link Clicked',
-    });
-  };
 
   const handleCopy = () => {
 
@@ -143,7 +132,7 @@ export default function Routine() {
 
 
     navigator.share({
-      title: 'NEUB Spring 23 Routine | CSC',
+      title: 'Routine',
       url: window.location.href
     })
   }
@@ -159,13 +148,9 @@ export default function Routine() {
         <div className="settingBox">
           <label htmlFor="settingTr" id='settingBoxClose' onClick={handleCloseIconClick}  ><FaTimes /></label>
           <h2>MENU</h2>
-
-          {/* <a href={pdfLink} download className='btn dPdf'><FaFilePdf/> Download PDF</a> */}
-          {/* <a href="https://discord.gg/jCVgCr37nJ" target="_blank" className='btn btnDis'><FaDiscord/> Join Our Server</a> */}
-          <Link to="/cr" className='btn' onClick={handleCrClick}><BiMessageRounded /> Contact CR</Link>
           <div className="btn" onClick={handleCopy}><FaLink /> Copy Page Url</div>
           <i className='btn' onClick={handleShare}><FaShareAlt /> Share</i>
-          <a href="https://github.com/ahnayef/react-neub-spring-routine/" target='_' className='btn'><FaGithub /> Source Code</a>
+          <a href="https://github.com/ahnayef/RCG-Classes" target='_' className='btn'><FaGithub /> Source Code</a>
 
           <div className="socialLinks">
             <a href='https://ahnayef.t.me' className='socialIcon' target="_blank"><FaTelegramPlane /></a>
@@ -184,10 +169,9 @@ export default function Routine() {
             {today != "Thursday" ? <button onClick={handleNext}>&gt;</button> : " "}
           </div>
           {
-            check ? routine.map((item) => { return (<Routinebox lab={item.lab} name={item.name} teacher={item.teacher} time={item.time} roomNo={item.roomNo} section={item.section} courseCode={item.courseCode} key={item.name} />) }) : <Weekend />
+            check ? routine.map((item) => { return (<Routinebox lab={item.lab} name={item.name} dept={item.dept} time={item.time} roomNo={item.roomNo} section={item.section} note={item.note} key={item.name} />) }) : <Weekend />
           }
         </div>
-        {/* <div className="copyPageUrl" onClick={handleCopy}><FaLink/> Copy Page Url</div> */}
       </div>
     </>
   )

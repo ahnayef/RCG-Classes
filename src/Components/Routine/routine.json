@@ -1,141 +1,74 @@
 {
     "sunday": [
         {
-            "name": "Fundamentals of Physics",
-            "teacher": "Shahadat Hossain",
-            "time": ["8:30 - 9:55"],
-            "roomNo": "R-412",
-            "courseCode":"PHY-05331201"
+            "name": "STA-201",
+            "dept": "CSE",
+            "time": ["11:30 - 1:00"],
+            "roomNo": "R-412"
         },
         {
-            "name": "Electronics devices & circuit",
-            "teacher": "Mr. Shahadat Hussain Parvez",
-            "time": ["10:00 - 11:25"],
-            "roomNo": "R-312",
-            "courseCode":"CSE-06131213"
-        },
-        {
-            "name": "DSA Lab",
-            "teacher": "Ms. Tasnim Zahan",
-            "time": ["11:30 - 2:25"],
-            "roomNo": "R-301",
-            "lab":true,
-            "section":"Section A",
-            "courseCode":"CSE-06131212"
-        },
-        {
-            "name": "EDC Lab",
-            "teacher": "Mr. Shahadat Hussain Parvez",
-            "time": ["11:30 - 2:25"],
-            "roomNo": "R-310",
-            "lab":true,
-            "section":"Section B",
-            "courseCode":"CSE-06131214"
+            "name": "MAT-05411101",
+            "dept": "CSE",
+            "time": ["1:00 - 2:30"],
+            "roomNo": "R-412"
         }
-      
         
     ],
     "monday": [
         {
-            "name": "Linear Algebra",
-            "teacher": "Mr. Rathindra Chandra Gope",
-            "time": ["10:00 - 11:25"],
-            "roomNo": "R-312",
-            "courseCode":"MAT-05411203"
+            "name": "MAT-05411203",
+            "dept": "CSE",
+            "time": ["10:00 - 11:30"],
+            "roomNo": "R-312"
         },
         {
-            "name": "EDC Lab",
-            "teacher": "Mr. Shahadat Hussain Parvez",
-            "time": ["11:30 - 2:25"],
-            "roomNo": "R-310",
-            "lab":true,
-            "section":"Section A",
-            "courseCode":"CSE-06131214"
-        },
-        {
-            "name": "DSA Lab",
-            "teacher": "Ms. Tasnim Zahan",
-            "time": ["11:30 - 2:25"],
-            "roomNo": "R-309",
-            "lab":true,
-            "section":"Section B",
-            "courseCode":"CSE-06131212"
-        },
-        {
-            "name": "Bangladesh Studies",
-            "teacher": "Unknown",
-            "time": ["2:30 - 3:55"],
-            "roomNo": "R-412",
-            "courseCode":"SSW-03141202"
+            "name": "MAT-211",
+            "dept": "BBA",
+            "time": ["11:30 - 1:00"],
+            "roomNo": "R-213"
         }
     ],
     "tuesday": [
         {
-            "name": "Fundamentals of Physics",
-            "teacher": "Shahadat Hossain",
-            "time": ["8:30 - 9:55"  ],
-            "roomNo": "R-412",
-            "courseCode":"PHY-05331201"
+            "name": "MAT-211",
+            "dept": "BBA",
+            "time": ["11:30 - 1:00"  ],
+            "roomNo": "R-213"
         },
         {
-            "name": "Electronics devices & circuit",
-            "teacher": "Mr. Shahadat Hussain Parvez",
-            "time": ["10:00 - 11:25"],
-            "roomNo": "R-312",
-            "courseCode":"CSE-06131213" 
-        },
-        {
-            "name": "Data Structure & Algorithms",
-            "teacher": "Ms. Tasnim Zahan",
-            "time": ["Section A: 11:30 - 12:55","Sention B: 1:00 - 2:25"],
-            "roomNo": "R-412",
-            "courseCode":"CSE-06131211"
+            "name": "MAT-05411202",
+            "dept": "BBA",
+            "time": ["1:00 - 2:30"  ],
+            "roomNo": "R-214"
         }
     ],
     "wednesday": [
         {
-            "name": "Advanced Functional English",
-            "teacher": "Unknown",
-            "time": ["8:30 - 9:55"],
-            "roomNo": "R-402",
-            "courseCode":"ENG-02321201"
+            "name": "STA-201",
+            "dept": "CSE",
+            "time": ["8:30 - 10:00"],
+            "roomNo": "R-206"
         },
         {
-            "name": "Linear Algebra",
-            "teacher": "Mr. Rathindra Chandra Gope",
-            "time": ["10:00 - 11:25"],
+            "name": "MAT-05411203",
+            "dept": "CSE",
+            "time": ["10:00 - 11:30"],
             "roomNo": "R-412",
-            "courseCode":"MAT-05411203"
+            "note":"Algebra"
         },
         {
-            "name": "Data Structure & Algorithms",
-            "teacher": "Ms. Tasnim Zahan",
-            "time": ["Section B: 11:30 - 12:55","Sention A: 1:00 - 2:25"],
-            "roomNo": "R-412",
-            "courseCode":"CSE-06131211"
+            "name": "MAT-05411202",
+            "dept": "BBA",
+            "time": ["1:00 - 2:30"],
+            "roomNo": "R-210"
         }
     ],
     "thursday": [
         {
-            "name": "Advanced Functional English",
-            "teacher": "Unknown",
-            "time": ["8:30 - 9:55"],
-            "roomNo": "R-402",
-            "courseCode":"ENG-02321201"
-        },
-        {
-            "name": "Bangladesh Studies",
-            "teacher": "Unknown",
-            "time": ["11:30 - 12:55"],
-            "roomNo": "R-312",
-            "courseCode":"SSW-03141202"
-        },
-        {
-            "name": "ACM",
-            "teacher": "Mr. Ayon Dey",
-            "time": ["1:00 - 3:55"],
-            "roomNo": "R-301",
-            "courseCode":" "
+            "name": "MAT-05411101",
+            "dept": "CSE",
+            "time": ["10:00 - 11:30"],
+            "roomNo": "R-312"
         }
     ]
 }

@@ -9,7 +9,7 @@
       transition: 0.5s;
       margin: 1em;
       width: 80%;
-      box-sizing: border-box;
+      /* box-sizing: border-box; */
       border-radius: 0.4em;
       animation: zoomIn;
       animation-duration: 0.5s;
@@ -43,12 +43,13 @@
       color: var(--yellow);
   }
 
-  .routineBox .courseCode{
+  .routineBox .note{
         position: absolute;
-        left: -2.4em;
-        transform: rotate(90deg);
-        font-size: 0.8em;
-        opacity: 0.3;
+        left: -1em;
+        transform: rotate(-90deg);
+        font-size: 0.95em;
+        /* color: var(--link-hov); */
+        opacity: 0.55;
   }
 
   .routineBox .lab {
