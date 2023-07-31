@@ -1,0 +1,109 @@
+{
+    "sunday": [
+        {
+            "name": "Basic Electric Engineering",
+            "teacher": "Mr. Shahadat Hussain Parvez",
+            "startTime": "10:00",
+            "endTime": "11:25",
+            "roomNo": "R-412"
+        },
+        {
+            "name": "Structured Programming Language",
+            "teacher": "Mr. Ayon Dey",
+            "startTime": "11:30",
+            "endTime": "12:55",
+            "roomNo": "R-412"
+        },
+        {
+            "name": "Discrete Math",
+            "teacher": "Ms. Tasnim Zahan",
+            "startTime": "1:00",
+            "endTime": "2:55",
+            "roomNo": "R-412"
+        }
+        
+    ],
+    "monday": [
+        {
+            "name": "Basic Electric Engineering",
+            "teacher": "Mr. Shahadat Hussain Parvez",
+            "startTime": "08:30",
+            "endTime": "09:55",
+            "roomNo": "R-501"
+        },
+        {
+            "name": "Calculus",
+            "teacher": "Mr. Rathindra Chandra Gope",
+            "startTime": "10:00",
+            "endTime": "11:25",
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Hist. of the Emerg. of Ind. Bangladesh",
+            "teacher": "Ms Most. Sweety Khatun",
+            "startTime": "1:00",
+            "endTime": "2:55",
+            "roomNo": "R-412"
+        }
+    ],
+    "tuesday": [
+        {
+            "name": "Structured Programming Language",
+            "teacher": "Mr. Ayon Dey",
+            "startTime": "08:30",
+            "endTime": "09:55",
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Basic Electric Engineering Lab",
+            "teacher": "Mr. Shahadat Hussain Parvez",
+            "startTime": "10:00",
+            "endTime": "12:55",
+            "roomNo": "R-310",
+            "lab":true
+        },
+        {
+            "name": "Discrete Math",
+            "teacher": "Ms. Tasnim Zahan",
+            "startTime": "1:00",
+            "endTime": "2:55",
+            "roomNo": "R-412"
+        }
+    ],
+    "wednesday": [
+        {
+            "name": "Calculus",
+            "teacher": "Mr. Rathindra Chandra Gope",
+            "startTime": "10:00",
+            "endTime": "11:25",
+            "roomNo": "R-412"
+        },
+        {
+            "name": "Structured Programming Language Lab",
+            "teacher": "Mr. Ayon Dey",
+            "startTime": "11:30",
+            "endTime": "2:55",
+            "roomNo": "R-301",
+            "lab":true,
+            "section":"Section A"
+        }
+    ],
+    "thursday": [
+        {
+            "name": "Structured Programming Language Lab",
+            "teacher": "Mr. Ayon Dey",
+            "startTime": "10:00",
+            "endTime": "12:55",
+            "roomNo": "R-309",
+            "lab":true,
+            "section":"Section B"
+        },
+        {
+            "name": "Hist. of the Emerg. of Ind. Bangladesh",
+            "teacher": "Ms Most. Sweety Khatun",
+            "startTime": "1:00",
+            "endTime": "2:55",
+            "roomNo": "R-412"
+        }
+    ]
+}

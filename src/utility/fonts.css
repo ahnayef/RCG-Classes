@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif; */
+
+@font-face {
+    font-family: 'LiAdorNoirrit';
+    src: url("../assets/font/Li_Ador_Noirrit_Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}

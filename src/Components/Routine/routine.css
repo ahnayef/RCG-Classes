@@ -1,0 +1,191 @@
+.routineMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text);
+}
+
+.routineList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+.routineList .dayArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0.5em;
+    user-select: none;
+}
+
+.routineList .dayArea h1 {
+    margin: 0 0.5em;
+}
+
+.routineList .dayArea button {
+    /* outline: 1px solid var(--primary); */
+    border: none;
+    padding: 0.2em 0.5em;
+    background-color: var(--primary);
+    color: var(--background);
+    font-size: 1.4em;
+    border-radius: 0.1em;
+    font-weight: 550;
+    user-select: none;
+    cursor: pointer;
+}
+
+.routineList .dayArea button:active {
+    scale: 0.95;
+}
+
+
+/* .sBtn{
+    padding: 0.5em;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    margin: 0.5em;
+    background-color: var(--primary);
+    color: var(--background);
+} */
+
+.settingBox .btn {
+    font-weight: 550;
+    color: var(--primary);
+}
+
+
+.settingBox .btn svg path {
+    stroke: var(--primary);
+}
+
+.settingBox .btn:hover svg path {
+    stroke: var(--background);
+}
+
+.settingBox .dPdf {
+    text-decoration: none;
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.settingBox .dPdf:hover {
+    background-color: var(--red);
+}
+
+.settingBox .btnDis {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.settingBox .btnDis:hover {
+    background-color: var(--purple);
+}
+
+
+.settingBox .socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.settingBox .socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.2em;
+    padding: 0.3em;
+    margin: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.settingBox .socialIcon:hover {
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+.settinfIcon label {
+    position: fixed;
+    right: 0.7em;
+    top: 0.7em;
+    display: flex;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--text);
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+
+.settinfIcon label:hover {
+    color: var(--primary);
+    transform: rotate(90deg);
+}
+
+.settingBox {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 0.7em var(--background-light);
+    border: 1px solid var(--primary);
+    border-radius: 0.3em;
+    padding: 1em;
+    z-index: 2;
+    animation: zoomOut   0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+}
+
+#settingTr:checked~.settingBox {
+    animation: bounceIn 0.5s;
+    display: flex;  
+}
+
+.settingBox #settingBoxClose {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 1.5em;
+    color: var(--red);
+}
+
+.settingBox h2 {
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width:720px) {
+    .settingBox {
+        width: 70%;
+    }
+
+    .routineList .dayArea h1 {
+        margin: 0 0.2em;
+        font-size: 1.3em;
+    }
+}

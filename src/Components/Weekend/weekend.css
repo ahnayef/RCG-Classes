@@ -1,0 +1,46 @@
+.weekBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid var(--primary);
+    border-radius: 0.4em;
+    padding: 0.5em;
+    gap: 0.5em;
+    animation: bounceIn;
+    animation-duration: 0.5s;
+}
+
+
+.weekBox .socialIcons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.5em;
+}
+
+.weekBox .socialIcons ul li {
+    list-style: none;
+    margin: 0.5em;
+}
+
+.weekBox .socialIcons ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.2em;
+}
+
+
+.weekBox .socialIcons ul li:nth-child(1) a {
+    color: var(--link-hov);
+}
+
+.weekBox .socialIcons ul li:nth-child(2) a {
+    color: var(--blue);
+}
+
+.weekBox .socialIcons ul li:nth-child(3) a {
+    color: var(--purple);
+}

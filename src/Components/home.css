@@ -1,0 +1,75 @@
+.homeMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+}
+
+.homeMain .btn {
+    font-weight: 510;
+}
+
+.homeSelectArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+}
+
+.homeMain h3 {
+    padding: 0.5em;
+    opacity: 0.7;
+}
+
+.homeMain .homeSelectArea .btn {
+    font-weight: 550;
+    font-size: 1em;
+}
+
+.homeMain .downloadPDF {
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--background);
+    border: 1px solid var(--red);
+    color: var(--text);
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.homeMain .downloadPDF:hover {
+    background-color: var(--red);
+    color: var(--background);
+}
+
+
+.homeMain .footer .actionBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.homeMain .footer .actionBox i,.homeMain .footer .actionBox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.2em;
+    padding: 0.5em;
+    border: 1px solid var(--primary);
+    margin: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.homeMain .footer .actionBox i:hover,.homeMain .footer .actionBox a:hover{
+ color: var(--background);
+ background-color: var(--primary);
+}
