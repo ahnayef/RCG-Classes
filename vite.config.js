@@ -6,9 +6,9 @@ const manifestForPlugin = {
   registerType: "prompt",
   includeAssets: ["favicon.ico", "pwa-icon-512.png", "android-chrome-256x256.png", "apple-touch-icon.png", "mask-icon.svg", "cr.jpg"],
   manifest: {
-    name: "Routine | Spring 23",
+    name: "Routine",
     short_name: "Routine",
-    description: "Spring23 routine app",
+    description: "MAT Courses Routine",
     icons: [
       {
         src: "src/assets/img/android-chrome-265x256.png",
