@@ -26,7 +26,8 @@
             "dept": "BBA",
             "time": ["11:30 - 1:00"],
             "roomNo": "R-213"
-        },{
+        },
+        {
             "name": "MAT-05415101",
             "dept": "MBA",
             "time": ["7:00 - 8:30 PM"],
@@ -72,7 +73,7 @@
             "dept": "MBA",
             "time": ["7:00 - 8:30 PM"],
             "roomNo": "~"
-        },
+        }
     ],
     "thursday": [
         {
