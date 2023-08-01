@@ -28,11 +28,11 @@
             "roomNo": "R-213"
         },
         {
-            "name": "MAT-05415101",
-            "dept": "MBA",
-            "time": ["7:00 - 8:30 PM"],
-            "roomNo": "~"
-        }
+            "name": "MAT-05415101",
+            "dept": "MBA",
+            "time": ["7:00 - 8:30 PM"],
+            "roomNo": "~"
+}
     ],
     "tuesday": [
         {
@@ -69,11 +69,11 @@
             "roomNo": "R-210"
         },
         {
-            "name": "MAT-05415101",
-            "dept": "MBA",
-            "time": ["7:00 - 8:30 PM"],
-            "roomNo": "~"
-        }
+            "name": "MAT-05415101",
+            "dept": "MBA",
+            "time": ["7:00 - 8:30 PM"],
+            "roomNo": "~"
+        }
     ],
     "thursday": [
         {
