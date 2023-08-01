@@ -30,7 +30,7 @@
             "name": "MAT-05415101",
             "dept": "MBA",
             "time": ["7:00 - 8:30 PM"],
-            "roomNo": "~"
+            "roomNo": "-"
         }
     ],
     "tuesday": [
