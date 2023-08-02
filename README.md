@@ -1,5 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/af7fee8a-23ef-4e1c-ad81-6754e0bc7060/deploy-status)](https://app.netlify.com/sites/rcgclasses/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93d90686-cc8a-425f-af92-c6884dc6c674/deploy-status)](https://app.netlify.com/sites/rcgclasses/deploys)
 ## Routine
 ### Math courses schedule
 
