@@ -6,7 +6,7 @@ const manifestForPlugin = {
   registerType: "prompt",
   includeAssets: ["favicon.ico", "pwa-icon-512.png", "android-chrome-256x256.png", "apple-touch-icon.png", "mask-icon.svg", "cr.jpg"],
   manifest: {
-    name: "Routine",
+    name: "Routine | MAT",
     short_name: "Routine",
     description: "MAT Courses Routine",
     icons: [
@@ -33,13 +33,8 @@ const manifestForPlugin = {
         sizes: "81x113",
         type: "image/svg+xml",
         purpose: "any maskable",
-      },
-      {
-        src: "src/assets/img/cr.jpg",
-        sizes: "457x450",
-        type: "image/jpg",
-        purpose: "any maskable",
-      },
+      }
+      
     ],
     theme_color: "#31393c",
     background_color: "#31393c",
