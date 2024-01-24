@@ -43,7 +43,7 @@ export default function Routine() {
     } else {
       setCheke(true);
       document.title = `${today}`
-      
+
       ReactGA.event({
         category: 'Page Visit',
         action: `${today}`,
@@ -136,6 +136,23 @@ export default function Routine() {
       url: window.location.href
     })
   }
+
+
+  const handleKeypress = (e) => {
+    if (e.key == "ArrowLeft" || e.key === "ArrowDown" || e.key === "p") {
+      handlePrev();
+    } else if (e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "n") {
+      handleNext();
+    } else if (e.key === "m") {
+      document.querySelector("#settingTr").click();
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeypress);
+    return () => window.removeEventListener('keydown', handleKeypress);
+  }, [today]);
+
 
   return (
     <>

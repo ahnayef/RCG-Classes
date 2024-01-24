@@ -5,12 +5,13 @@
       justify-content: center;
       flex-direction: column;
       border: 1px solid var(--primary);
+      border-radius: 0.2em;
+      box-shadow: 0 0 0.2em var(--background-light);
       padding: 0.7em;
       transition: 0.5s;
       margin: 1em;
       width: 80%;
       /* box-sizing: border-box; */
-      border-radius: 0.4em;
       animation: zoomIn;
       animation-duration: 0.5s;
       animation-timing-function: cubic-bezier(0.375, 0.885, 0.32, 1.275);

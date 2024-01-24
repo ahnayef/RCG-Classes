@@ -10,7 +10,7 @@ import ReactGa from 'react-ga4'
 
 export default function Weekend() {
 
-  const today= new Date().toLocaleDateString("en-US", { weekday: 'long' });
+  const today = new Date().toLocaleDateString("en-US", { weekday: 'long' });
 
   const handleConfetti = () => {
     party.confetti(document.querySelector('.weekBox'), {
