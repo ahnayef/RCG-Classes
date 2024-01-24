@@ -10,20 +10,20 @@ export default function Routinebox(routine) {
 
     // console.log(time);
 
-    const { note, lab, name, dept, time, roomNo, section } = routine;
+    const { note, lab, name, dept, time, roomNo } = routine;
 
 
     useEffect(() => {
 
         ReactGA.event(
             {
-                name:"Subject View",
+                name: "Subject View",
                 category: "Subject View",
                 action: { name },
                 label: `View ${name} subject`,
             },
             {
-                name:"Room",
+                name: "Room",
                 category: "Room",
                 action: { roomNo },
                 label: `Visit ${roomNo}`
@@ -35,10 +35,10 @@ export default function Routinebox(routine) {
     return (
         <div className="routineBox">
             {/* <p className="courseCode">{courseCode}</p> */}
-            { note && <p className="note">{note}</p> }
+            {note && <p className="note">{note}</p>}
             {lab ? <div className="lab">LAB</div> : " "}
             <h2 className='gre-text'>{name}</h2>
-            <h4>{dept}</h4>
+            {dept && <h4>{dept}</h4>}
             <div className="time">
                 {time.map((time, index) => {
                     return (

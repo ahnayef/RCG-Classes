@@ -1,13 +1,14 @@
 :root{
-    --background:#31393c;
+    --background:#18191A;
     --background-light:#6D6A75;
     --text:#fdfdfd;
-    --primary:#DE9E36;
+    --primary:#0095ff;
     --link:#DE9E36;
     --link-hov:#DEB841;
     --red:#DC3545;
     --blue:#0088cc;
     --purple:#5865f2;
     --yellow:#F5C542;
-    --gradient: radial-gradient(862px at 6% 18%, #F2994A 9.4%, #F2C94C 83.6%);
+    --gradient: radial-gradient(862px at 6% 18%, #00c6ff 9.4%, #0072ff 83.6%);
+    /* --gradient: radial-gradient(862px at 6% 18%, #F2994A 9.4%, #F2C94C 83.6%); */
 }

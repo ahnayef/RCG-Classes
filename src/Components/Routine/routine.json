@@ -1,86 +1,88 @@
 {
     "sunday": [
         {
-            "name": "STA-201",
+            "name": "Linear Algebra",
             "dept": "CSE",
-            "time": ["11:30 - 1:00"],
+            "time": [
+                "10:00 - 11:30"
+            ],
             "roomNo": "R-412"
         },
         {
-            "name": "MAT-05411101",
+            "name": "Calculus",
             "dept": "CSE",
-            "time": ["1:00 - 2:30"],
-            "roomNo": "R-412"
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-312"
         }
-        
     ],
     "monday": [
         {
-            "name": "MAT-05411203",
+            "name": "Calculus",
             "dept": "CSE",
-            "time": ["10:00 - 11:30"],
+            "time": [
+                "11:30 - 1:00"
+            ],
             "roomNo": "R-312"
-        },
-        {
-            "name": "MAT-211",
-            "dept": "BBA",
-            "time": ["11:30 - 1:00"],
-            "roomNo": "R-213"
-        },
-        {
-            "name": "MAT-05415101",
-            "dept": "MBA",
-            "time": ["7:00 - 8:30 PM"],
-            "roomNo": "Online"
-}
+        }
     ],
     "tuesday": [
         {
-            "name": "MAT-211",
-            "dept": "BBA",
-            "time": ["11:30 - 1:00"  ],
-            "roomNo": "R-213"
-        },
-        {
-            "name": "MAT-05411202",
-            "dept": "BBA",
-            "time": ["1:00 - 2:30"  ],
-            "roomNo": "R-214"
+            "name": "Linear Algebra",
+            "dept": "CSE",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-312"
         }
     ],
     "wednesday": [
         {
-            "name": "STA-201",
-            "dept": "CSE",
-            "time": ["8:30 - 10:00"],
-            "roomNo": "R-206"
+            "name": "Introduction to Math",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-214"
         },
         {
-            "name": "MAT-05411203",
-            "dept": "CSE",
-            "time": ["10:00 - 11:30"],
-            "roomNo": "R-412",
-            "note":"Algebra"
-        },
-        {
-            "name": "MAT-05411202",
+            "name": "Business Math",
             "dept": "BBA",
-            "time": ["1:00 - 2:30"],
-            "roomNo": "R-210"
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-501"
         },
         {
-            "name": "MAT-05415101",
-            "dept": "MBA",
-            "time": ["7:00 - 8:30 PM"],
-            "roomNo": "Online"
+            "name": "Statistics",
+            "time": [
+                "1:00 - 2:30"
+            ],
+            "roomNo": "R-209"
         }
     ],
     "thursday": [
         {
-            "name": "MAT-05411101",
-            "dept": "CSE",
-            "time": ["10:00 - 11:30"],
-            "roomNo": "R-312"
+            "name": "Business Math",
+            "dept": "BBA",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Introduction to Math",
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Statistics",
+            "time": [
+                "1:00 - 2:30"
+            ],
+            "roomNo": "R-209"
         }
     ]
 }
