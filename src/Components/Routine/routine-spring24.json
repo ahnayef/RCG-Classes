@@ -1,0 +1,88 @@
+{
+    "sunday": [
+        {
+            "name": "Linear Algebra",
+            "dept": "CSE",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-412"
+        },
+        {
+            "name": "Calculus",
+            "dept": "CSE",
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-312"
+        }
+    ],
+    "monday": [
+        {
+            "name": "Calculus",
+            "dept": "CSE",
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-312"
+        }
+    ],
+    "tuesday": [
+        {
+            "name": "Linear Algebra",
+            "dept": "CSE",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-312"
+        }
+    ],
+    "wednesday": [
+        {
+            "name": "Introduction to Math",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Business Math",
+            "dept": "BBA",
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-501"
+        },
+        {
+            "name": "Statistics",
+            "time": [
+                "1:00 - 2:30"
+            ],
+            "roomNo": "R-209"
+        }
+    ],
+    "thursday": [
+        {
+            "name": "Business Math",
+            "dept": "BBA",
+            "time": [
+                "10:00 - 11:30"
+            ],
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Introduction to Math",
+            "time": [
+                "11:30 - 1:00"
+            ],
+            "roomNo": "R-214"
+        },
+        {
+            "name": "Statistics",
+            "time": [
+                "1:00 - 2:30"
+            ],
+            "roomNo": "R-209"
+        }
+    ]
+}

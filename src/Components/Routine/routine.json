@@ -1,88 +1,82 @@
 {
     "sunday": [
         {
-            "name": "Linear Algebra",
-            "dept": "CSE",
-            "time": [
-                "10:00 - 11:30"
-            ],
-            "roomNo": "R-412"
-        },
-        {
-            "name": "Calculus",
-            "dept": "CSE",
+            "name": "MAT-05411202",
             "time": [
                 "11:30 - 1:00"
             ],
-            "roomNo": "R-312"
+            "roomNo": "R-117"
+        },
+        {
+            "name": "BUS-05412119",
+            "time": [
+                "1:00 - 2:30"
+            ],
+            "roomNo": "R-117"
+        },
+        {
+            "name": "MBA",
+            "time": [
+                "7:00 PM"
+            ],
+            "roomNo": "Online"
         }
     ],
     "monday": [
         {
-            "name": "Calculus",
-            "dept": "CSE",
+            "name": "MAT-05411202",
             "time": [
                 "11:30 - 1:00"
             ],
-            "roomNo": "R-312"
+            "roomNo": "R-214"
+        },
+        {
+            "name": "BUS-05412119",
+            "time": [
+                "1:30 - 2:00"
+            ],
+            "roomNo": "R-117"
+        },
+        {
+            "name": "MBA",
+            "time": [
+                "7:00 PM"
+            ],
+            "roomNo": "Online"
         }
     ],
     "tuesday": [
         {
             "name": "Linear Algebra",
-            "dept": "CSE",
             "time": [
-                "10:00 - 11:30"
+                "11:30 - 1:00"
             ],
-            "roomNo": "R-312"
+            "roomNo": "R-412"
         }
     ],
     "wednesday": [
         {
-            "name": "Introduction to Math",
-            "time": [
-                "10:00 - 11:30"
-            ],
-            "roomNo": "R-214"
-        },
-        {
-            "name": "Business Math",
-            "dept": "BBA",
+            "name": "Calculus",
             "time": [
                 "11:30 - 1:00"
             ],
-            "roomNo": "R-501"
+            "roomNo": "R-412"
         },
         {
-            "name": "Statistics",
+            "name": "Linear Algebra",
             "time": [
                 "1:00 - 2:30"
             ],
-            "roomNo": "R-209"
+            "roomNo": "R-412"
         }
     ],
     "thursday": [
         {
-            "name": "Business Math",
-            "dept": "BBA",
-            "time": [
-                "10:00 - 11:30"
-            ],
-            "roomNo": "R-214"
-        },
-        {
-            "name": "Introduction to Math",
+            "name": "Calculus",
             "time": [
                 "11:30 - 1:00"
             ],
-            "roomNo": "R-214"
-        },
-        {
-            "name": "Statistics",
-            "time": [
-                "1:00 - 2:30"
-            ],
-            "roomNo": "R-209"
+            "roomNo": "R-312 "
         }
     ]
 }
