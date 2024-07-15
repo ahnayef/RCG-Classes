@@ -186,7 +186,7 @@ export default function Routine() {
             {today != "Thursday" ? <button onClick={handleNext}>&gt;</button> : " "}
           </div>
           {
-            check ? routine.map((item) => { return (<Routinebox lab={item.lab} name={item.name} dept={item.dept} time={item.time} roomNo={item.roomNo} section={item.section} note={item.note} key={item.name} />) }) : <Weekend />
+            check ? routine.map((item) => { return (<Routinebox lab={item.lab} name={item.name} dept={item.dept} time={item.time} roomNo={item.roomNo} section={item.section} note={item.note} info={item.info} key={item.name} />) }) : <Weekend />
           }
         </div>
       </div>

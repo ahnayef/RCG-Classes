@@ -10,7 +10,7 @@ export default function Routinebox(routine) {
 
     // console.log(time);
 
-    const { note, lab, name, dept, time, roomNo } = routine;
+    const { note, lab, name, dept, time, roomNo, info } = routine;
 
 
     useEffect(() => {
@@ -38,6 +38,7 @@ export default function Routinebox(routine) {
             {note && <p className="note">{note}</p>}
             {lab ? <div className="lab">LAB</div> : " "}
             <h2 className='gre-text'>{name}</h2>
+            {info && <h4>{info}</h4>}
             {dept && <h4>{dept}</h4>}
             <div className="time">
                 {time.map((time, index) => {
