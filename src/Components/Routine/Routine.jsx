@@ -7,19 +7,18 @@ import Routinebox from './RoutineBox/Routinebox';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AiFillSetting } from "react-icons/ai";
-import { FaDiscord, FaFacebookMessenger, FaGithub, FaLink, FaShareAlt, FaTelegramPlane, FaTimes } from "react-icons/fa";
+import { FaCalculator, FaDiscord, FaFacebookMessenger, FaGithub, FaLink, FaShareAlt, FaTelegramPlane, FaTimes } from "react-icons/fa"
 import "animate.css"
 import Weekend from '../Weekend/Weekend'
+import { Link } from 'react-router-dom';
+import { BiMessageRounded } from 'react-icons/bi'
 import ReactGA from 'react-ga4';
+
 
 export default function Routine() {
 
-
-
   ReactGA.initialize(import.meta.env.VITE_GA_MID);
   ReactGA.send("pageview");
-
-
 
   const [routine, setRoutine] = useState(routineData.monday);
 
@@ -29,11 +28,13 @@ export default function Routine() {
 
   const [check, setCheke] = useState(false);
 
+
   useEffect(() => {
+
     if (today === "Friday" || today === "Saturday") {
-      // alert("No class today :: Enjoy your day!");
       setCheke(false);
-      document.title = `${today}`
+      console.log("No class today :: Enjoy your day!");
+      document.title = `Routine | ${today}`
       ReactGA.event({
         category: 'Page Visit',
         action: `${today}`,
@@ -42,7 +43,7 @@ export default function Routine() {
 
     } else {
       setCheke(true);
-      document.title = `${today}`
+      document.title = `Routine | ${today}`
 
       ReactGA.event({
         category: 'Page Visit',
@@ -50,12 +51,10 @@ export default function Routine() {
         label: `Page Visit ${today}`,
       });
 
-
     }
     setRoutine(routineData[today.toLowerCase()])
 
-
-  }, [today, routine, date]);
+  }, [today]);
 
 
 
@@ -67,6 +66,10 @@ export default function Routine() {
       label: 'Prev Button Clicked'
 
     });
+
+    if (today === "Sunday") {
+      return;
+    }
 
     date.setDate(date.getDate() - 1);
     //set new day
@@ -83,6 +86,9 @@ export default function Routine() {
       label: 'Next Button Clicked'
     });
 
+    if (today === "Thursday") {
+      return;
+    }
 
     date.setDate(date.getDate() + 1);
     //set new day
@@ -109,6 +115,13 @@ export default function Routine() {
   };
 
 
+  const handleCrClick = () => {
+    ReactGA.event({
+      category: 'Navigation',
+      action: 'CR Click from Nav',
+      label: 'Contact CR Link Clicked',
+    });
+  };
 
   const handleCopy = () => {
 
@@ -132,14 +145,14 @@ export default function Routine() {
 
 
     navigator.share({
-      title: 'Routine',
+      title: 'NEUB Spring 23 Routine | CSC',
       url: window.location.href
     })
   }
 
 
-  const handleKeypress = (e) => {
-    if (e.key == "ArrowLeft" || e.key === "ArrowDown" || e.key === "p") {
+  const handleKeyPress = (e) => {
+    if (e.key === "ArrowLeft" || e.key === "ArrowDown" || e.key === "p") {
       handlePrev();
     } else if (e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "n") {
       handleNext();
@@ -149,10 +162,11 @@ export default function Routine() {
   }
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeypress);
-    return () => window.removeEventListener('keydown', handleKeypress);
+    document.addEventListener('keydown', handleKeyPress);
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    }
   }, [today]);
-
 
   return (
     <>
@@ -185,10 +199,12 @@ export default function Routine() {
             <h1>{today}</h1>
             {today != "Thursday" ? <button onClick={handleNext}>&gt;</button> : " "}
           </div>
+          <h4 className='smallDate'>{date.toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' })}</h4>
           {
             check ? routine.map((item) => { return (<Routinebox lab={item.lab} name={item.name} dept={item.dept} time={item.time} roomNo={item.roomNo} section={item.section} note={item.note} info={item.info} key={item.name} />) }) : <Weekend />
           }
         </div>
+        {/* <div className="copyPageUrl" onClick={handleCopy}><FaLink/> Copy Page Url</div> */}
       </div>
     </>
   )
