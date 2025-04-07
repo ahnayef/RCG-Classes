@@ -13,6 +13,7 @@ import Weekend from '../Weekend/Weekend'
 import { Link } from 'react-router-dom';
 import { BiMessageRounded } from 'react-icons/bi'
 import ReactGA from 'react-ga4';
+import { MdOutlineUpdate } from 'react-icons/md';
 
 
 export default function Routine() {
@@ -161,6 +162,33 @@ export default function Routine() {
     }
   }
 
+  const handleUpdate = () => {
+    ReactGA.event({
+      category: 'Navigation',
+      action: 'Update Icon Click',
+      label: 'Update Icon Clicked',
+    });
+
+    if (!navigator.onLine) {
+      toast.error("You are offline. Please connect to the internet to update.");
+      return;
+    }
+
+    if (window.confirm("Are you sure you want to update? This will clear all caches and reload the page.")) {
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          registrations.forEach(reg => reg.unregister());
+          caches.keys().then(names => {
+            names.forEach(name => caches.delete(name));
+          });
+          localStorage.clear();
+          sessionStorage.clear();
+          window.location.reload();
+        });
+      }
+    }
+  }
+
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
     return () => {
@@ -171,6 +199,10 @@ export default function Routine() {
   return (
     <>
       <ToastContainer theme='dark' />
+
+      <div className="updateIcon">
+        <label onClick={handleUpdate} ><MdOutlineUpdate /></label>
+      </div>
 
       <div className="settinfIcon">
         <label htmlFor="settingTr" onClick={handleSettingClick} ><AiFillSetting /></label>
